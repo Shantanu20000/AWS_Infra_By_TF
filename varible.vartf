@@ -4,5 +4,5 @@ variable "instance_type" {
 }
 variable "ami" {
   description = "Instance image"
-  default     = ""
+  default     = "ami-00beae93a2d981137"
 }
