@@ -1,3 +1,4 @@
-resource "aws_key_pair" "key_" {
+resource "aws_key_pair" "tf_key" {
+    
   
 }
