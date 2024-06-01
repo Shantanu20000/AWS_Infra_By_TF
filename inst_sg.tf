@@ -10,7 +10,7 @@ resource "aws_security_group" "allow_http" {
       description = "TLC from VPC"
       from_port = port.value
       to_port = port.value
-      protocol = 
+      protocol = "tcp"
     }
 }
   egress {
