@@ -8,7 +8,7 @@ resource "aws_security_group" "allow_http" {
     iterator = prot
     content {
       description = "TLC from VPC"
-      
+      from_port 
     }
 }
   egress {
