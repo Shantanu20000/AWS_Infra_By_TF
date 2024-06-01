@@ -1,8 +1,10 @@
 variable "instance_type" {
   description = "Instance type"
   default     = "t2.micro"
+  type = string
 }
 variable "ami" {
   description = "Instance image"
   default     = "ami-00beae93a2d981137"
+  type = string
 }
