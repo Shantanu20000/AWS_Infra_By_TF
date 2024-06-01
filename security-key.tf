@@ -1,3 +1,3 @@
-resource "aws_key_pair" "key" {
+resource "aws_key_pair" "key_" {
   
 }
