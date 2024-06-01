@@ -6,6 +6,7 @@ resource "aws_security_group" "allow_http" {
   dynamic "ingress" {
     for_each = [ 22, 80, 443 ,3306 ]
     iterator = prot
+    
 }
   egress {
     from_port   = 0
