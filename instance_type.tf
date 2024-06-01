@@ -3,6 +3,6 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 variable "ami" {
-  description = "Instance type"
-  default     = "t2.micro"
+  description = "Instance image"
+  default     = ""
 }
