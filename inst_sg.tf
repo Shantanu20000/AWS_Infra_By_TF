@@ -1,19 +1,3 @@
-provider "aws" {
-  region = "us-east-1"
-}
-
-variable "instance_type" {
-  description = "Instance type"
-  default     = "t2.micro"
-}
-
-resource "aws_instance" "web" {
-  ami                    = "ami-00beae93a2d981137"
-  instance_type          = var.instance_type
-  key_name               = "shan-verginia"
-  vpc_security_group_ids = [aws_security_group.allow_http.id]
-}
-
 resource "aws_security_group" "allow_http" {
   name        = "allow_http_port"
   description = "Allow HTTP inbound traffic"

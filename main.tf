@@ -1,8 +1,6 @@
-provider "aws" {
-  region = "us-east-1"
-}
 resource "aws_instance" "web" {
-  ami           = "ami-04b70fa74e45c3917"
-  instance_type = "t2.micro"
-  key_name      = "shan_pvt_key"
+  ami                    = "ami-00beae93a2d981137"
+  instance_type          = var.instance_type
+  key_name               = "shan-verginia"
+  vpc_security_group_ids = [aws_security_group.allow_http.id]
 }
