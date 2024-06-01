@@ -1,3 +1,4 @@
 resource "aws_key_pair" "tf_key" {
-  key_name = "key_"
+  key_name = "tf_key"
+  
 }
