@@ -7,7 +7,7 @@ resource "aws_security_group" "allow_http" {
     for_each = [ 22, 80, 443 ,3306 ]
     iterator = prot
     content {
-      description = 
+      description = ""
     }
 }
   egress {
