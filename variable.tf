@@ -1,19 +1,19 @@
 variable "user_access_key" {
-  type = "string"
+  default = "your-access-key"
 }
 variable "user_secret_key" {
-  type = "string"
+  default = "your-secrt-key"
 }
 variable "region" {
-  type = "string"
+  default = "us-east-1"
 }
 variable "instance_type" {
   description = "Instance type"
   default     = "t2.micro"
 }
 variable "ami" {
-  type = "string"
+  default = "ami-00beae93a2d981137"
 }
 variable "security_key" {
-  type = "string"
+  default = "your id-rsa.pub key content"
 }
